@@ -10,14 +10,14 @@ class Solution {
         rev(nums,k,n-1);
         rev(nums,0,n-1);
     }
-    public void rev(int [] nums,int left,int right){
-        while(left<right){
+     public void rev(int[] nums, int left, int right) {
+        while (left < right) {
             int temp = nums[left];
-            nums[left]=nums[right];
-            nums[right]=temp;
+            nums[left] = nums[right];
+            nums[right] = temp;
+
             left++;
-            right --;
+            right--;
         }
-        
     }
 }
