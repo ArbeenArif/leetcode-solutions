@@ -10,9 +10,9 @@ class Solution {
         rev(nums,0,n-1);
     }
     public void rev(int [] nums,int left,int right){
-        int temp = arr[left];
-        arr[left]=arr[right];
-        arr[right]=temp;
+        int temp = nums[left];
+        nums[left]=nums[right];
+        nums[right]=temp;
         left++;
         right --;
     }
