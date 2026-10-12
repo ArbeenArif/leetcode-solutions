@@ -12,10 +12,10 @@ class Solution {
     public void rev(int [] nums,int left,int right){
         while(left<right){
             int temp = nums[left];
-        nums[left]=nums[right];
-        nums[right]=temp;
-        left++;
-        right --;
+            nums[left]=nums[right];
+            nums[right]=temp;
+            left++;
+            right --;
         }
         
     }
