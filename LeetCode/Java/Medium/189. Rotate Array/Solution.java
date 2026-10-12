@@ -6,9 +6,9 @@ class Solution {
             return;
         }
         k = k%n;
-        rev(nums,0,k-1);
-        rev(nums,k,n-1);
         rev(nums,0,n-1);
+        rev(nums,k,n-1);
+        rev(nums,0,k-1);
     }
      public void rev(int[] nums, int left, int right) {
         while (left < right) {
